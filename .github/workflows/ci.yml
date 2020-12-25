@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout 🛎
-        uses: actions/checkout@master
+        uses: actions/checkout@mmain
 
       - name: Setup node env 🏗
         uses: actions/setup-node@v2.1.2
@@ -42,5 +42,5 @@ jobs:
       - name: Run linter 👀
         run: npm run lint
 
-      - name: Run tests 🧪
-        run: npm run test
+      # - name: Run tests 🧪
+      #   run: npm run test

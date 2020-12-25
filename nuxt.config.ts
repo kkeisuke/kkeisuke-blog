@@ -1,20 +1,26 @@
 import { NuxtConfig } from '@nuxt/types'
 
+const title = 'kkeisuke blog'
+
 export default {
+  env: {
+    title
+  },
+
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'kkeisuke blog',
+    titleTemplate: `%s - ${title}`,
     htmlAttrs: {
       lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'kkeisuke blog' },
-      { property: 'og:title', content: 'kkeisuke blog' },
+      { hid: 'description', name: 'description', content: title },
+      { property: 'og:title', content: title },
       { property: 'og:type', content: 'website' },
       { property: 'og:image', content: '/profile.png' },
       { property: 'og:url', content: 'https://blog.kkeisuke.com/' },

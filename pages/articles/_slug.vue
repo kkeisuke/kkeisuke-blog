@@ -33,12 +33,12 @@ export default Vue.extend({
   },
   async asyncData({ $content, params }): Promise<Data> {
     const data = await $content('articles', params.slug).fetch()
-    const article = Array.isArray(data) ? null : data
+    const article = Array.isArray(data) ? data[0] : data
 
     return {
       title: String(process.env.title),
-      articleTitle: article?.title || '',
-      date: article?.date || '',
+      articleTitle: article.title,
+      date: article.date,
       article
     }
   },

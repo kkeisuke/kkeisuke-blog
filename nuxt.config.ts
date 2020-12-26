@@ -1,6 +1,7 @@
 import { NuxtConfig } from '@nuxt/types'
 
 const title = 'kkeisuke blog'
+const url = 'https://blog.kkeisuke.com'
 
 export default {
   env: {
@@ -22,8 +23,8 @@ export default {
       { hid: 'description', name: 'description', content: title },
       { property: 'og:title', content: title },
       { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: '/profile.png' },
-      { property: 'og:url', content: 'https://blog.kkeisuke.com/' },
+      { property: 'og:image', content: `${url}/profile.png` },
+      { property: 'og:url', content: url  },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@kkeisuke' },
     ],

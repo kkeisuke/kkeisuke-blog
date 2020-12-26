@@ -17,7 +17,7 @@ export default Vue.extend({
   },
   computed: {
     src(): string {
-      return `${require(`@/assets/icons/${this.icon}.svg`)}#icon`
+      return `/icons/${this.icon}.svg#icon`
     }
   }
 })

@@ -10,7 +10,8 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { Component, Vue } from 'nuxt-property-decorator'
+import { Context } from '@nuxt/types'
 import { IContentDocument } from '@nuxt/content/types/content'
 import { MetaInfo } from 'vue-meta'
 
@@ -25,13 +26,20 @@ type Data = {
   article: IContentDocument | null
 }
 
-export default Vue.extend({
+@Component({
   components: {
     Links,
     ArticleBlogTitle,
     ArticleHeader
-  },
-  async asyncData({ $content, params }): Promise<Data> {
+  }
+})
+export default class extends Vue implements Data {
+  title = ''
+  articleTitle = ''
+  date = ''
+  article = null
+
+  async asyncData({ $content, params }: Context): Promise<Data> {
     const data = await $content('articles', params.slug).fetch()
     const article = Array.isArray(data) ? null : data
 
@@ -41,21 +49,14 @@ export default Vue.extend({
       date: article?.date || '',
       article
     }
-  },
-  data(): Data {
-    return {
-      title: '',
-      articleTitle: '',
-      date: '',
-      article: null
-    }
-  },
+  }
+
   head(): MetaInfo {
     return {
       title: this.articleTitle
     }
   }
-})
+}
 </script>
 
 <style lang="scss">

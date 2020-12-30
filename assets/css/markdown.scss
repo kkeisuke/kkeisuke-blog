@@ -1,24 +1,24 @@
 .nuxt-content {
   h2 {
-    @apply py-4 text-2xl;
+    @apply py-4 text-2xl font-bold;
   }
   h3, h4, h5, h6 {
-    @apply py-2 text-lg;
+    @apply py-2 text-lg font-bold;
   }
   hr {
     @apply my-2;
   }
   p {
-    @apply pb-6;
+    @apply pb-8;
   }
   ul {
-    @apply pb-6 pl-2 list-outside list-disc;
+    @apply pb-8 pl-2 list-outside list-disc;
     ul {
       @apply pb-0;
     }
   }
   ol {
-    @apply pb-6 pl-2 list-outside list-decimal;
+    @apply pb-8 pl-2 list-outside list-decimal;
   }
   li {
     @apply ml-4;

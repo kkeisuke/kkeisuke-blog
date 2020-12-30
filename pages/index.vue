@@ -3,6 +3,9 @@
     <BlogTitle :title="title" class="mb-4" />
     <Links />
     <ArticleList v-for="article in articles" :key="article.path" :article="article" class="mt-8" />
+    <aside class="pt-24">
+      <p>2019年以前は <a href="https://kkeisuke.hatenablog.com/archive" target="_blank" rel="noopener noreferrer">はてなブログ</a> へ</p>
+    </aside>
   </main>
 </template>
 

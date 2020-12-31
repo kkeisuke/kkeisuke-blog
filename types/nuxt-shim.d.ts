@@ -1,4 +1,4 @@
-import { IContentDocument } from '@nuxt/content/types/content'
+import '@nuxt/content/types/content'
 
 declare module '@nuxt/content/types/content' {
   interface IContentDocument {

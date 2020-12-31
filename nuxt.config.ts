@@ -22,14 +22,15 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: title },
+      // { hid: 'keywords', name: 'keywords', content: '' },
       { property: 'og:title', content: title },
       { property: 'og:type', content: 'website' },
       { property: 'og:image', content: `${url}/profile.png` },
-      { property: 'og:url', content: url  },
+      { property: 'og:url', content: url },
       { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@kkeisuke' },
+      { name: 'twitter:site', content: '@kkeisuke' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -53,7 +54,7 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content',
+    '@nuxt/content'
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -74,7 +75,7 @@ export default {
     routes: async () => {
       const articles = await $content('articles').only(['path']).fetch()
       if (Array.isArray(articles)) {
-        return articles.map(article => article.path)
+        return articles.map((article) => article.path)
       }
     }
   },
@@ -91,5 +92,5 @@ export default {
         })
       }
     }
-  },
+  }
 } as NuxtConfig

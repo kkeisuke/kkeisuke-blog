@@ -1,4 +1,5 @@
 import { NuxtConfig } from '@nuxt/types'
+import { $content } from '@nuxt/content'
 
 const title = 'kkeisuke blog'
 const url = 'https://blog.kkeisuke.com'
@@ -46,6 +47,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/sitemap'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -65,6 +67,16 @@ export default {
 
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.scss'
+  },
+
+  sitemap: {
+    hostname: 'https://blog.kkeisuke.com',
+    routes: async () => {
+      const articles = await $content('articles').only(['path']).fetch()
+      if (Array.isArray(articles)) {
+        return articles.map(article => article.path)
+      }
+    }
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

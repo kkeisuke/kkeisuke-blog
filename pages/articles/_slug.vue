@@ -21,6 +21,7 @@ import ArticleHeader from '@/components/articles/ArticleHeader.vue'
 type Data = {
   title: string
   articleTitle: string
+  description: string
   date: string
   article: IContentDocument | null
 }
@@ -38,6 +39,7 @@ export default Vue.extend({
     return {
       title: String(process.env.title),
       articleTitle: article.title,
+      description: article.description,
       date: article.date,
       article
     }
@@ -46,13 +48,21 @@ export default Vue.extend({
     return {
       title: '',
       articleTitle: '',
+      description: '',
       date: '',
       article: null
     }
   },
   head(): MetaInfo {
     return {
-      title: this.articleTitle
+      title: this.articleTitle,
+      meta: [
+        { hid: 'description', name: 'description', content: this.description },
+        { hid: 'ogTitle', property: 'og:title', content: this.articleTitle },
+        { hid: 'ogDescription', property: 'og:description', content: this.description },
+        { hid: 'ogType', property: 'og:type', content: 'article' },
+        { hid: 'ogUrl', property: 'og:url', content: `${process.env.url}${this.$route.fullPath}` }
+      ]
     }
   }
 })

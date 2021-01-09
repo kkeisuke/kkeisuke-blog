@@ -6,7 +6,8 @@ const url = 'https://blog.kkeisuke.com'
 
 export default {
   env: {
-    title
+    title,
+    url
   },
 
   // Target (https://go.nuxtjs.dev/config-target)
@@ -23,10 +24,11 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: title },
       // { hid: 'keywords', name: 'keywords', content: '' },
-      { property: 'og:title', content: title },
-      { property: 'og:type', content: 'website' },
+      { hid: 'ogTitle', property: 'og:title', content: title },
+      { hid: 'ogDescription', property: 'og:description', content: title },
+      { hid: 'ogType', property: 'og:type', content: 'website' },
       { property: 'og:image', content: `${url}/profile.png` },
-      { property: 'og:url', content: url },
+      { hid: 'ogUrl', property: 'og:url', content: url },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@kkeisuke' }
     ],

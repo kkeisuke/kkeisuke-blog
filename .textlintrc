@@ -2,6 +2,8 @@
   "filters": {},
   "rules": {
     "textlint-rule-preset-ja-technical-writing": true,
-    "textlint-rule-preset-jtf-style": true
+    "textlint-rule-preset-jtf-style": {
+      "3.1.1.全角文字と半角文字の間": false
+    }
   }
 }

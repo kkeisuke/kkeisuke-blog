@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h2 class="mb-1 text-3xl leading-tight">{{ title }}</h2>
+    <h2 class="mb-1 text-3xl xl:text-4xl leading-tight">{{ title }}</h2>
     <time class="text-xs">{{ date }}</time>
   </header>
 </template>

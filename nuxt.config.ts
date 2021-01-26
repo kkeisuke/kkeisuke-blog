@@ -65,7 +65,10 @@ export default {
     markdown: {
       prism: {
         theme: 'prism-themes/themes/prism-vsc-dark-plus.css'
-      }
+      },
+      remarkPlugins: [
+        'remark-heading-id'
+      ]
     }
   },
 

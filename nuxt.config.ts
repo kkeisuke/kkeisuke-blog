@@ -66,9 +66,7 @@ export default {
       prism: {
         theme: 'prism-themes/themes/prism-vsc-dark-plus.css'
       },
-      remarkPlugins: [
-        'remark-heading-id'
-      ]
+      remarkPlugins: ['remark-heading-id']
     }
   },
 

@@ -73,6 +73,7 @@ export default {
   },
 
   tailwindcss: {
+    jit: true,
     cssPath: '~/assets/css/tailwind.scss'
   },
 

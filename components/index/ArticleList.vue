@@ -9,13 +9,13 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from 'vue'
+import Vue from 'vue'
 import { IContentDocument } from '@nuxt/content/types/content'
 
 export default Vue.extend({
   props: {
     article: {
-      type: Object as PropType<IContentDocument>,
+      type: Object as () => IContentDocument,
       required: true
     }
   }

@@ -12,7 +12,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { IContentDocument } from '@nuxt/content/types/content'
-import { MetaInfo } from 'vue-meta'
+import type { MetaInfo } from 'vue-meta'
 
 import Links from '@/components/common/Links.vue'
 import ArticleBlogTitle from '@/components/articles/ArticleBlogTitle.vue'

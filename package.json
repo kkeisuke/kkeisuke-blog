@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "core-js": "^3.16.1",
+    "core-js": "^3.17.2",
     "nuxt": "^2.15.8",
     "prism-themes": "^1.8.0"
   },
@@ -27,22 +27,22 @@
     "@nuxtjs/tailwindcss": "^4.2.1",
     "@vue/test-utils": "^1.2.2",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^27.0.6",
+    "babel-jest": "^27.1.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "jest": "^27.0.6",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.1.0",
     "postcss": "^8.3.6",
     "prettier": "^2.3.2",
     "remark-heading-id": "^1.0.0",
-    "sass": "^1.37.5",
+    "sass": "^1.39.0",
     "sass-loader": "^10.2.0",
     "textlint": "^12.0.2",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-preset-jtf-style": "^2.3.12",
-    "ts-jest": "^27.0.4",
+    "ts-jest": "^27.0.5",
     "vue-jest": "^3.0.7"
   }
 }

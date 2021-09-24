@@ -8,7 +8,7 @@ date: 2021/09/11
 
 以下の動画は、2019 年に文科省の YouTube チャンネルに投稿された動画です。10 分程度で小学校プログラミング教育の概要が、簡潔にまとめられています。
 
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/_fW3iB_1XgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" class="md:h-96" src="https://www.youtube.com/embed/_fW3iB_1XgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
 ## 要約

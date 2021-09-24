@@ -5,7 +5,10 @@
       @apply text-3xl;
     }
   }
-  h3, h4, h5, h6 {
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply py-2 text-lg font-bold;
   }
   hr {
@@ -29,7 +32,8 @@
       @apply text-gray-500;
     }
   }
-  p, li {
+  p,
+  li {
     code {
       @apply px-1 bg-gray-800 text-gray-200 text-sm;
     }
@@ -42,7 +46,8 @@
   }
   table {
     @apply mb-6;
-    td, th {
+    td,
+    th {
       @apply p-2 border border-gray-500;
     }
   }

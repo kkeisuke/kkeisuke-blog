@@ -11,4 +11,4 @@ Web 系で UIフレームワークというと、よく善か悪かで語られ�
 以下の図は、ここ数年で私が触れたUIフレームワークを主観でプロットした図になります。Vue 系がメインになりますので、あしからず。
 また、私は主に右下を主戦場にしているので、多少のバイアスも含まれていると思います。
 
-<article-img src="/articles/images/20200628_1.png" title="UIフレームワークの有効範囲" width="591" height="492"></article-img>
+<article-img src="/articles/images/20200628_1.webp" title="UIフレームワークの有効範囲" width="591" height="492"></article-img>

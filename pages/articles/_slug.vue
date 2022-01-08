@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { IContentDocument } from '@nuxt/content/types/content'
+import { FetchReturn } from '@nuxt/content/types/query-builder'
 import type { MetaInfo } from 'vue-meta'
 
 import Links from '@/components/common/Links.vue'
@@ -23,7 +23,7 @@ type Data = {
   articleTitle: string
   description: string
   date: string
-  article: IContentDocument | null
+  article: FetchReturn | null
 }
 
 export default Vue.extend({

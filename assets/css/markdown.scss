@@ -54,4 +54,7 @@
   .footnotes {
     @apply text-sm;
   }
+  img {
+    @apply inline-block;
+  }
 }

@@ -46,6 +46,8 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
+    // https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
@@ -81,20 +83,6 @@ export default {
       const articles = await $content('articles').only(['path']).fetch()
       if (Array.isArray(articles)) {
         return articles.map((article) => article.path)
-      }
-    }
-  },
-
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module?.rules.push({
-          enforce: 'pre',
-          test: /\.(ts|js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
       }
     }
   }

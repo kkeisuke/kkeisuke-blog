@@ -8,6 +8,7 @@ module.exports = {
   plugins: ['prettier'],
   // add your custom rules here
   rules: {
+    'vue/multi-word-component-names': 'off',
     'vue/array-bracket-spacing': 'error',
     'vue/arrow-spacing': 'error',
     'vue/block-spacing': 'error',
